@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe; /* Light, clean background */
+    color: #333;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc, #3f51b5); /* Multi-color gradient */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 8px solid #ffffff;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ff6347; /* Vibrant Tomato color */
+}
+
+h2 {
+    color: #ff69b4; /* Hot pink color for section headers */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-weight: 700;
+    border-bottom: 4px solid #ffd700; /* Gold underline */
+    padding-bottom: 5px;
+}
+
+nav ul {
+    background: #2c3e50; /* Darker background for contrast */
+    padding: 20px 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #f39c12; /* Bright yellow for links */
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347; /* Tomato color hover effect */
+    color: #fff;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 50px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 5px solid #2575fc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certification, .achievement {
+    margin: 30px 0;
+    padding: 30px;
+    background: #ffeb3b; /* Bright Yellow background */
+    border-left: 8px solid #ff6347; /* Matching border color */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.certification img, .achievement img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.certification:hover, .achievement:hover {
+    background-color: #ffe0b2; /* Lighter yellow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #34495e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 8px solid #ffffff;
+    font-size: 1.2rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+header, section, footer {
+    animation: fadeIn 2s ease-in;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 200px;
+    }
+
+    section {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
